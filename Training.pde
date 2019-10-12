@@ -25,10 +25,7 @@ class Point
     bias=1;
     float lineY = f(x);
     
-    if(y>lineY)
-      label=1;
-    else
-      label=-1;
+    label = (y>lineY) ? 1 : -1;
   }
   
   float pixelX() {
